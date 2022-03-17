@@ -193,12 +193,7 @@ public class Hand {
                 break;
             }
             // compare the suit of the current index and the index right after it. If all the cards have the same suit then flush will remain true
-            else if (cards[i].getSuit() == cards[i + 1].getSuit()){
-                flush = true;
-            }
-            // If even one card has a different suit then the else if statement will not run and the else statement will run.
-            // The else statement will make flush false and will stop the loop right there.
-            else {
+            else if (cards[i].getSuit() != cards[i + 1].getSuit()){
                 flush = false;
                 break;
             }
