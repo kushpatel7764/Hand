@@ -171,7 +171,7 @@ public class Hand {
     }
 
     public boolean hasFlush(){
-        boolean flush = false;
+        boolean flush = true;
         for (int i = 0; i < numCards; i++){
             if (i == numCards - 1){
                 break;
